@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    body {
+        font-family: Arial, sans-serif; 
+        margin: 0; 
+    }
+
+    header {
+        width: 100%;
+    }
+    .header_logo {
+        text-transform: uppercase;
+        color: black;
+        font-weight: 800;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .header_navigation {
+    }
+    .topnav {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        word-spacing: 10px;    
+    }
+    .word {
+        border: 1px solid rgb(126, 23, 129);
+        padding: 10px;
+        border-radius: 10%;
+        word-spacing:4px
+    }
+    .topnav a:hover{
+        border-bottom: 3px solid rgb(192, 46, 173);
+        cursor: pointer;
+    }
+    .topnav .icon{
+        display: none;
+    }        
+    .block_0 {
+        background-color:rgb(187, 128, 241);
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .left {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .right {
+        margin: 10px;   
+    }
+    .block_1 {
+        background-color: rgb(187, 128, 241);
+        height: 600px;
+        width: 
+        display: flex;
+        justify-content:space-evenly;
+        padding: 30px;
+        align-items:stretch;
+    }
+    .block_2 {
+        background-color: rgb(248, 221, 250);
+        width: 100%;
+        display: inline-block;
+        height: 1850px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content:center
+
+
+    }
+    .main__first {
+        margin-top: -10pt;
+        font-weight: 770;
+        font-size: 35pt;
+        line-height: 65px;
+        align-content: flex-start;
+    }
+    .pore {
+        color: rgb(163, 29, 163);
+        line-height: 15px;
+    }
+    .started {  
+        color: white;
+        text-decoration: none;
+        user-select: none;
+        outline: none;
+        padding: .8em 1em calc(.8em + 5px);
+        border-radius: 5px;
+        background: rgb(161, 21, 161);
+        box-shadow: none;
+        border: none;
+        width: 180px;
+        margin-top: 35px;
+        
+    }
+    .gena {
+        width: 590px;
+        height: 440px;
+    }
+    .donazv {
+        text-align: center;
+        color:blueviolet; 
+        
+        
+    }
+    .second {
+        margin-top: -50pt;
+        text-align: center;
+        display:inline-flex;
+        justify-content:center;
+        line-height: 20px;
+
+
+
+    }
+    .build_title {
+        height: 100px;
+    }
+    .container-1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .container-1 div{
+        padding: 30px;
+        border: 1px solid silver;
+        flex-basis: 10%;
+        height: 200px;
+        margin-top: 30px;
+        
+    }
+
+    .box-1 {
+       
+        background-color: yellowgreen;
+        border-radius: 20px;
+        border: none
+    }
+    .box-2 {
+        margin-left: 17px;
+        margin-right: 17px;
+        background-color: violet;
+        border-radius: 20px;
+        border: none
+     }
+    .box-3 {
+        background-color: tomato;
+        border-radius: 20px;
+        border: none
+    }
+
+    .block_3 {
+        width: 100%;
+        display: flex;
+        justify-content:space-evenly;
+        padding: 30px;
+        align-items:stretch;
+    }
+
+     }
+     .three_left {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+
+     }
+     .main_three {
+        align-content: flex-start;
+        font-weight: 700;
+        font-size: 30pt;
+        line-height: 50px
+        
+        
+     }
+     .pore_2 {
+        font-size: 8pt;
+        line-height: 18px
+
+     }
+     .More {
+        margin-top: 18px;
+        color: white;
+        text-decoration: none;
+        user-select: none;
+        outline: none;
+        padding: .8em 1em calc(.8em + 5px);
+        border-radius: 5px;
+        background: rgb(161, 21, 161);
+        box-shadow: none;
+        border: none;
+     }
+     .foo_right  {
+        display: inline-flex;
+        justify-content:space-evenly;
+        width: 40%;
+     }
+     .haos {
+         margin-top: 39px;
+        width: 250px;
+        height: 250px;
+        border: 4px solid #a0a2a3;
+     }
+     .block_5 {
+        display:inline-flex;
+        text-align: right;
+        justify-content:flex-end;
+        width: 90%;
+        flex-direction:column;
+     }
+     .What {
+        margin-top:35px;
+        color: blueviolet;
+        margin-right: 25px;
+        
+     }
+     .main_foo {
+        margin-top: 2px;
+        margin-right: 25px;
+     }
+     .container-2 {
+        display:flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .container-2 div{
+        padding: 30px;
+        border: 1px solid silver;
+        flex-basis: 10%;
+        height: 200px;
+        margin-top: 50px;
+        border: 4px solid #f3d138;
+        text-align: center;
+    }
+    .container-3 {
+        display:flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .container-3 div{
+        padding: 30px;
+        border: 1px solid rgb(175, 168, 168);
+        flex-basis: 10%;
+        height: 200px;
+        margin-top: 5px;
+        border: 4px solid #95f838;
+        text-align: center;
+    }
+    .box_1 {
+        border-radius: 20px;
+        border: none;
+    }
+    .box_2 {
+        border-radius: 20px;
+        border: none;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .box_3 {
+        border-radius: 20px;
+        border: none;
+    }
+    .box_4 {
+        border-radius: 20px;
+        border: none;
+    }
+    .box_5 {
+        border-radius: 20px;
+        border: none;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .box_6 {
+        border-radius: 20px;
+        border: none;  
+    }
+    .main_five {
+        text-align: center;
+        width: 100%;
+    }
+    .OUR {
+        color: blueviolet;
+        margin-top: 80px;
+        text-align: center;
+    }
+    .main_5 {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .Block_3 {
+        display: inline-flex;
+        width: 100%;
+        height: 1270px;
+        justify-content: center;
+        
+    }
+
+    .block_leftt {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        
+    }
+    .left_img {
+        margin-top: 55px;
+        width: 250px;
+        height: 300px;
+        border: 4px solid #a0a2a3;
+        margin-left: -35pt;
+    }
+    .block_leftt_text {
+
+    }
+    .Research {
+        margin-top: 80px;
+        color: rgb(19, 247, 159);
+    }
+    .main_6 {
+
+    }
+    .Excep {
+        font-size: 8pt;
+        line-height: 18px
+    }
+    .View {
+        color: rgb(0, 0, 0);
+        border-radius: 5px;
+        border: 2px solid #c300ff;
+        box-shadow: none;
+        font-weight: bold;
+        margin-top: 10px;
+        width: 140px;  
+        text-decoration: none;
+        user-select: none;
+        outline: none;
+        padding: .3em 1em calc(.3em + 1px);
+    }
+    .left_img_2 {
+        margin-top: 100px;
+        width: 250px;
+        height: 300px;
+        border: 4px solid #a0a2a3;
+        margin-left: -35pt;
+    }
+    .block_rightt {
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .Development {
+        margin-top: 80px;
+        margin-left: 80px;
+        color:rgb(247, 34, 211);
+    }
+    .main_7 {
+        margin-left: 80px;
+        margin-top: -8pt;
+    }
+    .Excep_2 {
+        font-size: 8pt;
+        line-height: 18px;
+        margin-left: 80px;
+    }
+    .View_2 {
+        color: rgb(0, 0, 0);
+        border-radius: 5px;
+        border: 2px solid #c300ff;
+        box-shadow: none;
+        font-weight: bold;
+        width: 140px;
+        height: 30px;
+        margin-left: 80px;
+        margin-top: 10px;
+        text-decoration: none;
+        user-select: none;
+        outline: none;
+        padding: .3em 1em calc(.3em + 1px);
+    }
+    .right_img {
+        width: 250px;
+        height: 300px;
+        border: 4px solid #a0a2a3;
+        margin-top: 80px;
+        margin-left: 120px;
+    }
+    .UIUX {
+        margin-top: 120px;
+        margin-left: 30px;
+        color: crimson;
+    }
+    .main_8 {
+        margin-left: 30px;
+        margin-top: 2px;
+    }
+    .View_3 {
+        color: rgb(0, 0, 0);
+        
+        border-radius: 5px;
+        border: 2px solid #c300ff;
+        box-shadow: none;
+        font-weight: bold;
+        width: 140px;
+        margin-left: 30px;
+        margin-top: 15px;
+        text-decoration: none;
+        user-select: none;
+        outline: none;
+        padding: .3em 1em calc(.3em + 1px);
+    }
+    .Excep_3 {
+        margin-left: 30px;
+        font-size: 8pt;
+        line-height: 18px;
+        margin-top: 2px;
+    }
+    .Block_4 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 1370px;
+        background-color: rgb(248, 215, 232);
+    }
+    .Block_4_start {
+        
+        
+       
+    }
+    .Meet {
+        text-align: center;
+        color: blueviolet;
+        letter-spacing: 3px;
+        
+    }
+    .Awesome {
+        margin-top: 35px;
+        text-align: center;
+        
+    }
+    .Photo_all {
+       margin-top: 150px;
+       display: inline-flex;
+       justify-content: space-evenly;
+       width: 100%;
+       border-radius: 10px;
+       
+    }
+    .Photo-1 {
+        width: 250px;
+        height: 250px;
+        transform: skewY(3deg);
+        border: 4px solid #7dd4ff;
+    }
+    .Photo-2 {
+        width: 250px;
+        height: 250px;
+        transform: skewY(3deg);
+        border: 4px solid #7dffa8;
+    }
+    .Photo-3 {
+        width: 250px;
+        height: 250px;
+        transform: skewY(-3deg);
+        border: 4px solid #7dd4ff;
+    }
+    .Photo-4 {
+        width: 250px;
+        height: 250px;
+        transform: skewY(-3deg);
+        border: 4px solid #7dffa8;   
+    }
+    .Block_Omega {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 200px;
+    }
+    .Block_4_left {
+        width: 35%;
+        
+    }
+    .Block_4_right {
+        width: 35%;
+        
+    
+    }
+
+    .Testi {
+        color: darkmagenta;
+    }
+    .Kollit {
+        font-size: 8pt;
+        line-height: 18px;
+    }
+    .They {
+        
+    }
+    .Dolb {
+        font-size: 10pt;;
+        
+    }
+    .Block_4_right_img {
+        width: 500px;
+        height: 350px;
+        border: 4px solid #f8f542;
+        transform: skewX(9deg);
+        transform: skewY(-1deg);
+    }
+    .Block_5 {
+        width: 100%;
+        height: 800px;
+    }
+    .header_5{
+        text-align: center;
+    }
+    .Omega_2 {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 55px;
+    }
+    .Contact {
+        color:rgb(146, 7, 158);
+        margin-top: 55px;
+    }
+    
+    .Lorem {
+        font-size: 12pt;
+    }
+    .Phone {
+        color: crimson;
+    }
+    .Email {
+        color: darkgreen;
+    }
+    .Address {
+        color: rgb(95, 34, 194);
+    }
+    .group {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    input {
+        font-size: 16px;
+        padding: 10px;
+        display: block;
+        width: 300px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+    }
+    input:focus {
+        outline: none;
+    }
+    label {
+        color: #999;
+        font-size: 18px;
+        position: absolute;
+        pointer-events: none;
+        left: 10px;
+        top: 15px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+input:focus ~ label, input:valid ~ label {
+        top: -15px;
+        font-size: 14px;
+        color: #5264AE;
+    }
+.bar {
+        position: relative;
+        display: block;
+        width: 320px;
+    }
+.bar:before, .bar:after {
+        content: "";
+        height: 2px;
+        width: 0;
+        bottom: 0;
+        position: absolute;
+        background: #5264AE;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+.bar:before {
+        left: 50%;
+    }
+.bar:after {
+        right: 50%;
+    }
+    input:focus ~ .bar:before,
+    input:focus ~ .bar:after {
+        width: 50%;
+    }
+    .Write {
+        margin-top: 1px;
+    }
+    .Block_6_all {
+        width: 100%;
+        height: 550px;
+        background-color: lightblue;
+    
+    }
+    .Block_6_header {
+       display: flex;
+       justify-content: space-between;
+       
+    }
+    .left_header_6 {
+        margin-left: 130px;
+        margin-top: 50px;
+    }
+    .From {
+        color: rgb(160, 15, 136);
+        
+    }
+    .Get_header_6 {
+        margin-top: -3pt;
+    }   
+    .Go_to_6 {
+        width: 20%;
+        margin-top: 130px;
+        text-decoration: underline;
+        font-size: 11pt;
+        
+    }
+    .container-6 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    .container-6 div{
+        padding: 50px;
+        border: 4px solid silver;
+        flex-basis: 10%;
+        height: 150px;
+       
+        
+    }
+
+    .box-1-6 {
+       
+        
+        border-radius: 20px;
+        border: none
+    }
+    .box-2-6 {
+        
+        margin-left: 17px;
+        margin-right: 17px;
+        border-radius: 20px;
+        border: none
+     }
+    .box-3-6 {
+        
+        border-radius: 20px;
+        border: none
+    }
+    .Excep_6 {
+        font-size: 8pt;
+        line-height: 18px;
+    }
+    .App-1 {
+        margin-top: -15pt;
+        color: rgb(210, 30, 30);
+    }
+    .App-2 {
+        margin-top: -15pt;
+        color: rgb(255, 8, 123);
+    }
+    .App-3 {
+        margin-top: -15pt;
+        color: darksalmon;
+    }
+    .Block_7_all {
+        width: 100%;
+        height: 300px;
+    }
+    .Block-7 {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+        
+       
+    }
+    .Block_7_1 {
+        
+    }
+    .Block_7_2 {
+        
+    }
+    .Block_7_3 {
+
+    }
+    .Fectetur {
+        margin-top: 30px;
+        font-size: 11pt;
+        line-height: 25px;
+        margin-left: 10px;
+    }
+    .Logo-2 {
+        margin-left: 10px;
+        font-weight: 800;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .P-last-1 {
+        font-size: 10pt;
+    }
+    .P-last-2 {
+        font-size: 10pt;
+        margin-top: -2pt;
+    }
+</style>
+<meta charset="UTF-8">
+<title>Vgfgfsg</title>
+</head>
+<body>
+    <header>
+        <div class="block_0">
+            <div class="header_logo">ROU</div>
+            <nav class="header_navigation">
+                <div class="topnav" id="myTopnav">
+                    <a>Home</a>
+                    <a>About</a>
+                    <a>Service</a>
+                    <a>Works</a>
+                    <a>News</a>
+                    <a>Contact</a>
+                    <a><span class="word">Get A Quote</span></a>
+                    <a href="" id="menu" class="icon">&#9776;</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="block_1">
+            <div class='left'>
+                <h1 class="main__first">Work Smartly<br/> with Endless</br> Possibility</h1>
+                <p class="pore">Pore et dolore magna aliqua. Ut enim ad<br></br> minin veniam, quis nostrud exerction</p>
+                <button class="started">Get Started</button>
+            </div>
+            <div class='right'>
+                <img src="jCWTI8MV-pM.jpg" class='gena' alt="Бегущий по лезвию"/>
+            </div>
+        </div>
+    <div class="block_2">
+            <div class='donazv'>
+                <h3 class='build_title'>Build Trust First</h3>
+            </div>
+            <div class="second">
+                <h1>Control your business with a<br></br>single tap</h1>
+            </div>
+        <div class="container-1">
+            <div class="box-1">
+                <h3>Complete business Control</h3>
+                <p>Pore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis<br>nos trud exerci tation</p>
+            </div>
+            <div class="box-2">
+                    <h3>Critical analytics and report</h3>
+                    <p><br>Pore et dolore magna aliqua.<br>Ut enim ad minim veniam,quis<br>nos trud exerci tation</p>
+            </div>
+            <div class="box-3">
+                    <h3>User satisfaction quarranted</h3>
+                    <p><br>Pore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis<br>nos trud exerci tation</p>
+            </div>
+        </div>  
+        
+        <div class="block_3">  
+            <div class="three_left">
+                <h1 class="main_three">Most innovative<br>creative team</h1>
+                <p>Pore et dolore magna aliqua.Ut enim ad<br>minim veniam,quis nostrud exerction<br></p>
+                <p class="pore_2">Duis aute irure dolor in reprehenderit in voluptate<br>velit esse cillum dolore
+                     eu fugiat nulla pariatur.Excep<br>teur sint occae cat cupidatat non proident, 
+                     sunt in<br>culpa qui officia deser unt mollit anim id est laborum</p>
+                <button class="More">Know More</button>
+            </div>     
+            <div class="foo_right">
+                <img src="M4dP1abCdKU.jpg" class='haos' alt="Фотосессия"/>
+                <img src="sXlTV8YYOXs.jpg" class='haos' alt="Фотосессия"/>
+            </div>
+        </div> 
+            <div class="block_5">
+                <h3 class="What">What We Do</h3>
+                <h1 class="main_foo">Service to solve all kinds of<br>business problem</h1>
+            </div>
+        <div class="container-2">
+                <div class="box_1">
+                        <h3>Business Automation</h3>
+                        <p>Pore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis<br>nos trud exerci tation</p>
+                </div>
+                <div class="box_2">
+                        <h3>Ecommerce Support</h3>
+                        <p>Pore et dolore magna aliqua.<br>Ut enim ad minim veniam,quis<br>nos trud exerci tation</p>
+                </div>
+                <div class="box_3">
+                        <h3>Video  Production</h3>
+                        <p>Pore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis<br>nos trud exerci tation</p>
+                </div>
+            </div>
+            <div class="container-3">
+                <div class="box_4">
+                        <h3>Realtime Support</h3>
+                        <p>Pore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis<br>nos trud exerci tation</p>
+                </div>
+                <div class="box_5">
+                        <h3>Location Marking</h3>
+                        <p>Pore et dolore magna aliqua.<br>Ut enim ad minim veniam,quis<br>nos trud exerci tation</p>
+                </div>
+                <div class="box_6">
+                        <h3>File Upload Protocol</h3>
+                        <p>Pore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis<br>nos trud exerci tation</p>
+                </div>  
+            </div>
+        </div>
+            <div class="main_five">
+                <h4 class="OUR">OUR PROJECTS</h4>
+                <h1 class="main_5">Check the real innovation of<br>problem solving</h1>
+            </div>
+        <div class="Block_3">
+            <div class="block_leftt">
+                <img src="GbLXXo5KPAY.jpg" class="left_img" alt="boy"/>
+                <div class="block_leftt_text">
+                <h4 class="Research">Research & Analytics</h4>
+                <h2 class="main_6">Ei biristi veja rate tuminei bole<br> somoy amar katena</h2>
+                <p class="Excep">Excepteur sint occae cat cupidatat non proident,sunt in culpa<br>qui officia deser unt mollit a do eiusmod tempor
+                incididunt ut<br>labore et dolore magna aliqua.</p>
+                <button class="View">View Project</button>
+                </div>
+                <img src="3XHJzU0DfN8.jpg" class="left_img_2" alt="rakyha"/>
+                </div>
+            <div class="block_rightt">
+                <h4 class="Development">Development</h4>
+                <h2 class="main_7">Jodi kokhono vul hoye jay<br>tumi oporadh nio na</h2>
+                <p class="Excep_2">Excepteur sint occae cat cupidatat non proident,sunt in culpa<br>qui officia deser unt mollit a do eiusmod tempor
+                    incididunt ut<br>labore et dolore magna aliqua.</p>
+                <button class="View_2">View Project</button>
+                <img src="h84OZWhGpZE.jpg" class="right_img" alt="family"/>
+                <h4 class="UIUX">UI/UX Engineering</h4>
+                <h2 class="main_8">Ami jare chaire se thake mori<br> ontore</h2>
+                <p class="Excep_3">Excepteur sint occae cat cupidatat non proident,sunt in culpa<br>qui officia deser unt mollit a do eiusmod tempor
+                        incididunt ut<br>labore et dolore magna aliqua.</p>
+                <button class="View_3">View Project</button> 
+            </div>
+        </div>
+        <div class="Block_4">
+                <div class="header_4">
+                    <h4 class="Meet">MEET OUR TEAM</h4>
+                    <h1 class="Awesome">Awesome people with great<br> business skills</h1>
+                </div>
+                <div class="Block_4_start">
+                    <div class="Photo_all">
+                    <div>
+                    <img src="oNjSnbxOZdU.jpg" class="Photo-1" alt="Bob"/> 
+                    <h4>Clown Clownskiy</h4>
+                    <p>Game director</p>
+                    </div>
+                    <div>
+                    <img src="Bp3f3uU2KRM.jpg" class="Photo-2" alt="Teo"/>
+                    <h4>Gribnoy Sup</h4>
+                    <p>Little Director</p>
+                    </div>
+                    <div>
+                    <img src="Kv2iwmkEjmY.jpg" class="Photo-4" alt="Lёnya"/>
+                    <h4>Middle Director</h4>
+                    <p>Tsigan Davlatyan</p>
+                    </div>
+                    <div>
+                    <img src="ml7I6WAbPfs.jpg" class="Photo-3" alt="Gena"/>
+                    <h4>Garik Gorilazz</h4>
+                    <p>Uborshik Semen</p>
+                    </div>
+                    </div>
+                </div>
+            <div class='Block_Omega'>
+                <div class="Block_4_left">
+                    <h4 class="Testi">TESTIMONIAL</h4>
+                    <h1 class="They">They are awesome!</h1>
+                    <p class="Kollit">Kollit a do eiusmod tempor incididunt ut labore et do<br>irure dolor in reprehenderit in voluptate velit esse<br> cilium
+                    dolore eu fugiat nulla pariatur</p>
+                    <h4 class="Dolb">- Kabir Manja <p>Music Producer</p></h4>
+                </div>
+                <div class="Block_4_right">
+                    <img src="EF3Q8croosE.jpg" class="Block_4_right_img" alt="Lebovsky">
+                </div>
+            </div>
+        </div>
+        <div class="Block_5">
+            <div class="header_5">
+                <h4 class="Contact">CONTACT US</h4>
+                <h1 class="Stay">Stay connected with us for<br>any person</h1>
+            </div>
+        <div class="Omega_2">
+            <div class="Block_5_left">
+                <h2 class="Write">Write us a message </h2>
+                <div class="group">      
+                    <input type="text" required>
+                    <span class="bar"></span>
+                    <label>Your name</label>
+                 </div>
+                 <div class="group">      
+                    <input type="text" required>
+                    <span class="bar"></span>
+                    <label>Your Email</label>
+                 </div>
+                 <div class="group">      
+                    <input type="text" required>
+                    <span class="bar"></span>
+                    <label>Subject</label>
+                 </div>
+                 <div class="group">      
+                    <input type="text" required>
+                    <span class="bar"></span>
+                    <label>Start writing message here</label>
+                 </div>
+                 <button class="started">Get Started</button>
+            </div>
+                <div class="Block_5_right">
+                    <p class="Lorem">Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do
+                     eiusmod tempor inci<br>didunt ut labore et dolore magna aliqua</p>
+                     <h5 class="Phone">Phone <p>0123-4567-8910</p> </h5>
+                     <h5 class="Email">Email <p>hello@cocolucku.com</p></h5>
+                     <h5 class="Address">Address <p>20,Armeniya, Savar Ahmet</p></h5>
+                </div>
+            </div>
+        </div>
+    <div class="Block_6_all">
+            <div class="Block_6_header">
+                <div class="left_header_6">
+                <h4 class="From">FROM OUR BLOG</h4>
+                <h1 class="Get_header_6">Get lastest update</h1>
+             </div>
+                <p class="Go_to_6">Go to Blog</p>
+            </div>
+        <div class="container-6">
+            <div class="box-1-6">
+                <p class="App-1">App Development</p>
+                <h5 class="Whenn">When the musics over turn off the light</h5>
+                <p class="Excep_6">Excep teur sint occae cat cupid<br>atat non proident,sunt in culpa<br>qui officia deser unt mollit ..</p>
+                <h5>Sharmin Eity</h5>
+                <h4></h4>
+                     </div>
+            <div class="box-2-6">
+                <p class="App-2">Desing</p>
+                <h5 class="Whenn-2">When the musics over turn off the light</h5>
+                <p class="Excep_6">Excep teur sint occae cat cupid<br>atat non proident,sunt in culpa<br>qui officia deser unt mollit ..</p>
+                <h5>Sanjida Ema</h5>
+                    </div>
+            <div class="box-3-6">
+                <p class="App-3">Research</p>
+                <h5 class="Whenn-3">When the musics over turn off the light</h5>
+                <p class="Excep_6">Excep teur sint occae cat cupid<br>atat non proident,sunt in culpa<br>qui officia deser unt mollit ..</p>
+                <h5>Nayana Eva</h5>
+                </div>
+         </div>
+     </div>
+<div class="Block_7_all">
+    <div class="Block-7">
+         <div class="Block_7_1">
+             <h2 class="Logo-2">ROU</h2>
+             <p class="Fectetur">Fectetur adipisicing elit, sed do eius mod<br>tempor Lorem ipsum dolor sit amet con<br> sectetur adipisicing elitt ut labore</p>
+             <div class="group">      
+                <input type="text" required>
+                <span class="bar"></span>
+                <label>Submit email</label>
+             </div>
+        </div>
+             <div class="Block_7_2">
+                 <h3 class="About">About</h3>
+                 <div class="P-last-1"><p>About Us</p>
+                 <p>Service</p>
+                 <p>Our Stoiry</p>
+                 <p>Success</p>
+                 <p>Support</p>
+                </div>
+             </div>
+             <div class="Block_7_3">
+                 <h4 class="Service">Service</h4>
+                 <div class="P-last-2">
+                 <p>Development</p>
+                 <p>Maintanance</p>
+                 <p>Consultancy</p>
+                 <p>Design</p>
+                </div>
+             </div>
+             <div class="Block_7_4">
+                 <h4 class="Get in">Get in Touch</h4>
+                 <p>22/1 Armeniya, Amin Bazar</p>
+                 <p>xuculoko@gmail.com</p>
+                 <p>+88 99365 256789</p>
+             </div>
+    </div>
+         
+
+     </div>
+</main>
+</body>
+</html>
